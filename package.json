@@ -18,9 +18,14 @@
   },
   "homepage": "https://github.com/brenhamp/just-tech-news#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "dotenv": "^14.3.2",
     "express": "^4.17.2",
+    "lint": "^1.1.2",
     "mysql2": "^2.3.3",
     "sequelize": "^6.14.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.7.0"
   }
 }

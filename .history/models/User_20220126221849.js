@@ -56,9 +56,9 @@ User.init(
     async beforeUpdate(updatedUserData) {
         updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
         return updatedUserData;
-      },
-  },
-            
+      }
+  }
+          },   
            // TABLE CONFIGURATION OPTIONS GO HERE (https://sequelize.org/v5/manual/models-definition.html#configuration))
 
     // pass in our imported sequelize connection (the direct connection to our database)
@@ -71,7 +71,7 @@ User.init(
     underscored: true,
     // make it so our model name stays lowercase in the database
     modelName: 'user'
-}
+      }
 );
 
 module.exports = User;
